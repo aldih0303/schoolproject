@@ -1,0 +1,58 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+ "http://www.w3.org/TR/html4/loose.dtd">
+
+<HTML>
+
+<HEAD>
+<TITLE>配列の演算</TITLE>
+<META http-equiv="Content-Type" content="text/html; charset=Shift_JIS">
+
+<STYLE type="text/css">
+<!--
+TH{background-color:#CCCCCC;}
+TD,TH{
+  width:100px;
+  text-align:center;
+}
+-->
+</STYLE>
+
+<SCRIPT type="text/javascript">
+<!--
+var a = new Array(3);
+var b = new Array(3);
+var kai;
+a[0] = 5;
+a[1] = 12;
+a[2] = 18;
+b[0] = 33;
+b[1] = 14;
+b[2] = 65;
+function kakezan(i){
+  kai = a[i] * b[i];
+  alert("答えは" + kai + "です");
+
+}
+//-->
+</SCRIPT>
+
+</HEAD>
+
+<BODY>
+<H3>配列の演算</H3>
+<TABLE border="1">
+<TR><TH>添字</TH><TH>a</TH><TH>b</TH><TH>a×bを計算</TH></TR>
+<TR>
+  <TH>0</TH><TD>5</TD><TD>33</TD>
+  <TD><BUTTON onclick="kakezan(0)">計算結果</BUTTON></TD>
+</TR><TR>
+  <TH>1</TH><TD>12</TD><TD>14</TD>
+  <TD><BUTTON onclick="kakezan(1)">計算結果</BUTTON></TD>
+</TR><TR>
+  <TH>2</TH><TD>18</TD><TD>65</TD>
+  <TD><BUTTON onclick="kakezan(2)">計算結果</BUTTON></TD>
+</TR>
+</TABLE>
+</BODY>
+
+</HTML>
