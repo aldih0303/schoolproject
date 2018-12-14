@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contoh Angket</title>
+	<link rel="stylesheet" type="text/css" href="stylesekolah1.css">
+</head>
+<body>
+	<div class="form">
+		<h1>Contoh Angket</h1>
+		<p>
+		<label>Nama<br><input type="text" name="Nama" placeholder="Tuliskan Nama Anda..." size="50"></label>
+		</p>
+		<p>
+		<label>Gender</label><br>
+		<input type="radio" name="male">Cowok
+		<input type="radio" name="female">Cewek
+		</p>
+		<p>
+		<label>Umur</label><br>
+		<select name="umur">
+			<option>16thn kebawah</option>
+			<option>16thn-20thn</option>
+			<option>21thn-25thn</option>
+			<option>26thn-30thn</option>
+			<option>31thn keatas</option>
+		</select>
+		</p>
+		<hr>
+		<div class="soal">
+			<b>Soal 1</b>
+			<p>Di saat liburan anda lebih senang?</p>
+			<input type="radio" name="holiday" value="1">Main Game
+			<input type="radio" name="holiday" value="2">Jalan-jalan
+			<input type="radio" name="holiday" value="3">Belajar
+			<input type="radio" name="holiday" value="4">dll <input type="text" name="dll" size="50" placeholder="Tulis Di sini...">
+			<hr>
+			<br>Soal 2</b>
+			<p>Anda lebih suka nonton film?</p>
+			<input type="checkbox" name="movie" value="romance">Romance
+			<input type="checkbox" name="movie" value="sci-fi">Sci-fi
+			<input type="checkbox" name="movie" value="anime">Anime
+			<input type="checkbox" name="movie" value="horror">Horror
+			<input type="checkbox" name="movie" value="documentary">Documentary
+			<hr>
+		</div>
+		<p>
+		<label>Komentar:<textarea name="Komentar" cols="50" rows="6" placeholder="Tuliskan Komentar Anda..."></textarea></label>
+		</p>
+		<br>
+		<input type="submit" name="kirim" value="Kirim">
+		<input type="reset" name="clear" value="Ulang">
+	</div>
+</body>
+</html>

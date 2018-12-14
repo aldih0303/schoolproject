@@ -1,0 +1,14 @@
+label{
+	font-weight: bold;
+	font-size: 14pt;
+	margin-right: 25px;
+}
+textarea{
+	vertical-align: top;
+}
+.soal input{
+	margin-left: 20px;
+}
+p{
+	line-height: 1.5;
+}
