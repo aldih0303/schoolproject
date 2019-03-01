@@ -1,0 +1,368 @@
+body{
+    background-image: url("onepiece.jpg");
+    background-size: cover;
+}
+
+header {
+    background-color:#FF3333; 
+    height: 130px;
+    text-align: center;
+    font-size: 26pt;
+    position: relative;
+    border-radius: 5px;
+    border-left: solid 50px #000000;
+    border-right: solid 50px #000000;
+    padding: 5px 7px;
+    margin-bottom: 20px;
+    box-shadow: 4px 4px 10px #999999;
+}
+#title-words {
+    color:black;
+    font-size: 30pt;
+    font-weight: bold;
+    font-family: stencil, fantasy;
+    position:relative;
+}
+
+nav {
+    background-color: #FF3333;
+}
+
+nav li {
+    width: 120px;
+    height: 40px;
+    float: left;
+    padding: 10px;
+    text-align: left;
+    list-style:none;
+}
+hr{
+	color: white;
+}
+nav a {
+    color: #FFFFFF;
+    font-size: 20pt;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #000000;
+}
+
+ul {
+    list-style-type: upper-roman;
+    font-weight: bold;
+}
+
+h1 {
+    background-color: #FF3333;
+    border-radius: 5px;
+    border-left: solid 10px #000000;
+    border-right: solid 10px #000000;
+    padding: 5px 7px;
+    margin-bottom: 20px;
+    box-shadow: 4px 4px 10px #999999;
+    font-size: 20pt;
+    color: black;
+    letter-spacing: 1pt;
+    text-align:center;
+}
+
+h2 {
+    text-align: center;
+    padding: 5px 7px;
+    margin-bottom: 20px;
+    font-size: 14pt;
+    color: antiquewhite;
+    letter-spacing: 1pt;
+}
+b {
+    color: whitesmoke;
+}
+
+p {
+    font: bold 14pt/1.0 serif;
+    color: antiquewhite
+}
+
+#footer {
+    width: 100%;
+    height: 30px;
+    background-color: #000000;
+    margin-top: 10px;
+    position: relative;
+    text-align:center;
+}
+
+#footer p {
+    color: #FFFFFF;
+    bottom: 10px;
+    left: 350px;
+}
+
+.main img {
+    width: 250px;
+    height: 180px;
+    float: left;
+    position: relative;
+}
+
+img {
+    width: 500px;
+    height: 400px;
+    float: left;
+}
+
+.main p {
+    font-size: 20pt;
+    color:antiquewhite;
+    padding: 5px;
+    text-align: justify;
+}
+
+@media (max-width: 720px) {
+    body {
+        background-color: #666666;
+    }
+    #container {
+        width: auto;
+        margin: auto;
+        background-color: #000000;
+        border-left: 5px solid #FF9933;
+        border-right: 5px solid #FF9933;
+    }
+}
+
+table,tr,td{
+    font-family: century gothic;
+    background-color:red;
+    color: black ;
+    border: 3px solid black;
+    padding: 5px;
+    position:relative;
+    margin:5%;
+}
+
+.slider{
+    margin: auto;
+    border: 10px solid #efefef;
+    position: relative;
+    overflow: hidden;
+    width: 900px;
+    height: 450px;
+}
+.slider .isi-slider img{
+    width: 900px;
+    height: 450px;
+    float: left;
+}
+.slider .isi-slider{
+    position: absolute;
+    width: 3900px;
+
+    animation-name: slider;
+    animation-duration: 10s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    -webkit-animation-name:slider;
+    -webkit-animation-duration:10s;
+    -webkit-animation-timing-function:ease-in-out;
+    -webkit-animation-iteration-count:infinite;
+    -moz-animation-name:slider;
+    -moz-animation-duration:10s;
+    -moz-animation-timing-function:ease-in-out;
+    -moz-animation-iteration-count:infinite;
+    -o-animation-name:slider;
+    -o-animation-duration:10s;
+    -o-animation-timing-function:ease-in-out;
+    -o-animation-iteration-count:infinite;
+}
+
+.slider:after{
+    font-size: 150px;
+    position: absolute;
+    z-index: 12;
+    color: rgba(255,255,255, 0);
+    left: auto; top: 80px;
+    -webkit-transition:1s all ease-in-out;
+    -moz-transition:1s all ease-in-out;
+    transition: 1s all ease-in-out;
+}
+
+
+@-moz-keyframes slider{
+    0%{
+        left: 0; opacity: 0;
+    }
+    2%{
+        opacity: 1;
+    }
+    20%{
+        left: 0; opacity: 1;
+    }
+    21%{
+        opacity: 0;
+    }
+    24%{
+        opacity: 0;
+    }
+    25%{
+        left: -900px; opacity: 1;
+    }
+    45%{
+        left: -900px; opacity: 1;
+    }
+    46%{
+        opacity: 0;
+    }
+    48%{
+        opacity: 0;
+    }
+    50%{
+        left: -1800px; opacity: 1;
+    }
+    70%{
+        left: -1800px; opacity: 1;
+    }
+    72%{
+        opacity: 0;
+    }
+    74%{
+        opacity: 0;
+    }
+    75%{
+        left: -2700px; opacity: 1;
+    }
+    95%{
+        left: -2700px; opacity: 1;
+    }
+    97%{
+        left: -2700px; opacity: 0;
+    }
+    100%{
+        left: 0; opacity: 0;
+    }
+}
+
+@-webkit-keyframes slider{
+    0%{
+        left: 0; opacity: 0;
+    }
+    2%{
+        opacity: 1;
+    }
+    20%{
+        left: 0; opacity: 1;
+    }
+    21%{
+        opacity: 0;
+    }
+    24%{
+        opacity: 0;
+    }
+    25%{
+        left: -900px; opacity: 1;
+    }
+    45%{
+        left: -900px; opacity: 1;
+    }
+    46%{
+        opacity: 0;
+    }
+    48%{
+        opacity: 0;
+    }
+    50%{
+        left: -1800px; opacity: 1;
+    }
+    70%{
+        left: -1800px; opacity: 1;
+    }
+    72%{
+        opacity: 0;
+    }
+    74%{
+        opacity: 0;
+    }
+    75%{
+        left: -2700px; opacity: 1;
+    }
+    95%{
+        left: -2700px; opacity: 1;
+    }
+    97%{
+        left: -2700px; opacity: 0;
+    }
+    100%{
+        left: 0; opacity: 0;
+    }
+}
+
+@keyframes slider{
+    0%{
+        left: 0; opacity: 0;
+    }
+    2%{
+        opacity: 1;
+    }
+    20%{
+        left: 0; opacity: 1;
+    }
+    21%{
+        opacity: 0;
+    }
+    24%{
+        opacity: 0;
+    }
+    25%{
+        left: -900px; opacity: 1;
+    }
+    45%{
+        left: -900px; opacity: 1;
+    }
+    46%{
+        opacity: 0;
+    }
+    48%{
+        opacity: 0;
+    }
+    50%{
+        left: -1800px; opacity: 1;
+    }
+    70%{
+        left: -1800px; opacity: 1;
+    }
+    72%{
+        opacity: 0;
+    }
+    74%{
+        opacity: 0;
+    }
+    75%{
+        left: -2700px; opacity: 1;
+    }
+    95%{
+        left: -2700px; opacity: 1;
+    }
+    97%{
+        left: -2700px; opacity: 0;
+    }
+    100%{
+        left: 0; opacity: 0;
+    }
+}
+
+@media (min-width: 720px) and (max-width: 992px) {
+    body {
+        background-color: #666666;
+    }
+    #container {
+        width: auto;
+        margin: auto;
+        background-color: #000000;
+        border-left: 5px solid #FF9933;
+        border-right: 5px solid #FF9933;
+    }
+}
+
